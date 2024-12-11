@@ -1,0 +1,45 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" version="1.0">
+  <info>
+    <title>Custom APA 7th Edition</title>
+    <id>http://www.zotero.org/styles/custom-apa-7</id>
+    <link href="http://www.zotero.org/styles/custom-apa-7" rel="self"/>
+    <author>
+      <name>Custom APA Style</name>
+    </author>
+    <category citation-format="author-date"/>
+    <summary>A custom APA 7th Edition style with in-text citations sorted by date and alphabetized reference list.</summary>
+  </info>
+  <citation>
+    <sort>
+      <key variable="issued" sort="ascending"/>
+      <key variable="author" sort="ascending"/>
+    </sort>
+    <layout prefix="(" suffix=")" delimiter="; ">
+      <group delimiter=", ">
+        <text variable="author"/>
+        <date variable="issued" prefix=" " form="year"/>
+      </group>
+    </layout>
+  </citation>
+  <bibliography>
+    <sort>
+      <key variable="author"/>
+      <key variable="title"/>
+    </sort>
+    <layout>
+      <group delimiter=". ">
+        <text variable="author"/>
+        <date variable="issued" prefix=" (" suffix=")"/>
+        <text variable="title" font-style="italic"/>
+        <text variable="container-title"/>
+        <text variable="volume" prefix=", vol. "/>
+        <text variable="issue" prefix=" no. "/>
+        <text variable="page" prefix=" pp. "/>
+        <text variable="DOI" prefix=". DOI: "/>
+      </group>
+      <text macro="access"/>
+    </layout>
+  </bibliography>
+</style>
